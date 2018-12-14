@@ -35,7 +35,7 @@ ul {
     padding: 10rem 0;
 }
 
-input[type=email] {
+#newsletter input[type=email] {
     border: none;
     color: whitesmoke;
     font-size: 2rem;
@@ -47,12 +47,12 @@ input[type=email] {
     transition: width 0.4s ease-in-out;
 }
 
-input[type=email]:focus {
+#newsletter input[type=email]:focus {
     width: 50%;
     color: whitesmoke;
 }
 
-input[type=text] {
+#newsletter input[type=text] {
     border: none;
     color: whitesmoke;
     font-size: 2rem;
@@ -64,7 +64,7 @@ input[type=text] {
     transition: width 0.4s ease-in-out;
 }
 
-input[type=text]:focus {
+#newsletter input[type=text]:focus {
     width: 35%;
     color: whitesmoke;
 }

@@ -1,0 +1,18 @@
+<%- include('header') -%>
+<section id="create-post">
+    <div class="container">
+        <h1>Create New Blog Post</h1>
+        <form action="/create-post" method="post">
+            <div class="form-group">
+                <input type="text" class="form-control" name="title" id="post-title" placeholder="Blog Title">
+                <small>Title</small>
+                <textarea type="text" class="form-control" name="content" id="post-body" placeholder="Blog Content"></textarea>
+                <small>Content</small>
+                <input type="text" class="form-control" name="tags" id="tags" placeholder="Tags">
+                <small>Tags (separate all tags with a comma ",")</small>
+                <button type="submit" class="btn btn-lg btn-outline-dark">Create Post</button>
+            </div>
+        </form>
+    </div>
+</section>
+<%- include('footer') -%>
