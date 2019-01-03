@@ -1,0 +1,17 @@
+<%- include('header') -%>
+<section id="post-success">
+    <div class="container subsequent">
+        <div class="row">
+            <div class="col">
+                <h1>Error</h1>
+                <p>
+                    <%= postError %>
+                </p>
+                <a href="/create-post">
+                    <button class="btn btn-lg btn-outline-dark">Try Again</button>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<%- include('footer') -%>

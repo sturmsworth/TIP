@@ -1,8 +1,8 @@
 <%- include('header') -%>
-<section class="subsequent" id="listen">
+<section id="listen">
     <div class="container">
-        <div class="row text-center">
-            <div class="col">
+        <div class="row text-center h-100">
+            <div class="col my-auto">
                 <h3>Welcome to Terror InPodnito</h3>
                 <h3>We cover all things horror and how it relates to the pop-culture zeitgiest. Be entertained, be
                     intrigued, but most of
@@ -26,16 +26,45 @@
                 </a>
             </div>
         </div>
+        <div class="row" id="casts">
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container-fluid parallax" id="newsletter">
+        <div class="row text-center">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <h1 id="news">Newsletter Signup</h1>
+                <form action="/" method="POST">
+                    <div class="form-group">
+                        <input type="text" name="fName" id="f-name" autocomplete="off" placeholder="First Name">
+                        <input type="text" name="lName" id="l-name" autocomplete="off" placeholder="Last Name">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" id="email" autocomplete="off" placeholder="Email">
+                        <small id="email-help" class="form-text text-muted">We'll never share your email with anyone
+                            else.</small>
+                    </div>
+                    <button type="submit" class="btn btn-lg btn-outline-light">Sign Up</button>
+                </form>
+            </div>
+        </div>
     </div>
 </section>
 
 <section class="subsequent" id="about">
     <div class="container">
-        <div class="row">
-            <div class="col-lg-4 col-md-5 col-sm-12">
+        <div class="row text-center">
+            <div class="col">
+                <h1 class="haunted">About</h1>
+            </div>
+        </div>
+        <div class="row h-100">
+            <div class="col-lg-4 col-md-5 col-sm-12 my-auto">
                 <img src="images/tiplogo.png" alt="tip-logo" id="circle-logo">
             </div>
-            <div class="col-lg-8 col-md-7 col-sm-12">
+            <div class="col-lg-8 col-md-7 col-sm-12 my-auto">
                 <h3>Let your hosts Palmer, Alex, and Sam guide you through the terrifying world of horror as we analyze
                     fan-favorite genre pieces throughout the years. We'll cover films, games, books, TV shows, and more
                     as we attempt to
@@ -47,9 +76,8 @@
                 <img src="images/alex-host.jpg" alt="alex-host" class="host">
                 <h1>Alex</h1>
                 <p>Alex adds a touch of class. In spite of the amount of alcohol she consumes on a weekly basis, she
-                    emerges as the
-                    feminine voice that grounds the overwhelmingly male horror perspective. She appreciates '80s bush,
-                    Whatever Happened to Baby Jane, overflowing glasses
+                    emerges as the feminine voice that grounds the overwhelmingly male horror perspective. 
+                    She appreciates '80s bush, <i>Whatever Happened to Baby Jane</i>, overflowing glasses
                     of vodka, Joe Dante and the original Halloween film. What more do you need?</p>
                 <a href="http://www.twitter.com/alooters" target="_blank" rel="noopener noreferrer">
                     <button class="btn btn-lg btn-outline-dark">
@@ -91,30 +119,90 @@
     </div>
 </section>
 
+<section id="group-parallax">
+    <div class="container-fluid parallax" id="group">
+
+    </div>
+</section>
+
 <section class="subsequent" id="contact">
     <div class="container">
         <div class="row text-center">
-            <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="col">
+                <h1 class="haunted">Contact</h1>
+            </div>
+        </div>
+
+        <div class="row justify-content-center social">
+            <div class="col-4 text-center">
                 <a href="http://www.twitter.com/terrorinpodnito" target="_blank" rel="noopener noreferrer">
-                    <i class="fab fa-twitter fa-7x"></i>
+                    <button class="btn btn-lg btn-outline-dark">
+                        <i class="fab fa-twitter fa-7x"></i>
+                    </button>
                 </a>
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="col-6 text-left">
+                <h1>Twitter</h1>
+                <p>Follow us on Twitter to get all the latest information about the cast,
+                    our thoughts on recent news, announcements, and more. We're on this all the time
+                    and it's one of the easiest ways to contact us. So, what are you waiting for? Get to
+                    tweeting!
+                </p>
+            </div>
+        </div>
+
+        <div class="row justify-content-center social">
+            <div class="col-6 text-right">
+                    <h1>Facebook</h1>
+                    <p>We're on Facebook, too! Come like our page, join in on the group discussions, get
+                        involved in polls, leave reviews, hear about contests, and message us directly!
+                        It's the best way to be direct part of our community, so join in on the fun.
+                    </p>
+            </div>
+            <div class="col-4 text-center">
                 <a href="http://www.facebook.com/terrorinpodnito" target="_blank" rel="noopener noreferrer">
-                    <i class="fab fa-facebook fa-7x"></i>
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-12">
-                <a href="http://instagram.com/terrorinpodnito" target="_blank" rel="noopener noreferrer">
-                    <i class="fab fa-instagram fa-7x"></i>
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-12">
-                <a href="mailto:cast@terrorinpodnito.com">
-                    <i class="fas fa-envelope fa-7x"></i>
+                    <button class="btn btn-lg btn-outline-dark">
+                        <i class="fab fa-facebook fa-7x"></i>
+                    </button>
                 </a>
             </div>
         </div>
+
+        <div class="row justify-content-center social">
+            <div class="col-4 text-center">
+                <a href="http://instagram.com/terrorinpodnito" target="_blank" rel="noopener noreferrer">
+                    <button class="btn btn-lg btn-outline-dark">
+                        <i class="fab fa-instagram fa-7x"></i>
+                    </button>
+                </a>
+            </div>
+            <div class="col-6 text-left">
+                <h1>Instagram</h1>
+                <p>Posts done on the daily, plus podcast clips, episode previews, stories and more. Follow us
+                    here to get pictures of the cast, what we're up to, horror events we're attending and 
+                    mini-reviews. If you're a fan of the visual, then this is the place to follow us.
+                </p>
+            </div>
+        </div>
+        
+        <div class="row justify-content-center social">
+            <div class="col-6 text-right">
+                <h1>Email</h1>
+                <p>We like you, you're old school. Whoever says email is dead doesn't have a clue. Go ahead and
+                    click the envelope so we can all prove that "IT'S ALIVE!" Seriously though, we love hearing 
+                    from our fans, so if this is the way you opt to do it, then get it done! Looking forward to
+                    hearing from you soon.
+                </p>
+            </div>
+            <div class="col-4 text-center">
+                <a href="mailto:cast@terrorinpodnito.com">
+                    <button class="btn btn-lg btn-outline-dark">
+                        <i class="fas fa-envelope fa-7x"></i>
+                    </button>
+                </a>
+            </div>
+        </div>
+
         <!-- Instagram API here -->
         <div class="row">
                 <div class="col">
@@ -127,18 +215,22 @@
             <div class="col">
                 <a href="#">
                     <div class="follow-button">
+                        <br>
                         <a href="https://www.instagram.com/terrorinpodnito" target="_blank">
-                            <button class="btn btn-lg btn-outline-dark" type="button"><i class="fab fa-instagram"></i></button>
+                            <button class="btn btn-lg btn-outline-dark" type="button"><i class="fab fa-instagram"></i> Instagram</button>
                         </a>
+                        <br>
+                        <br>
                     </div>
                 </a>
             </div>
         </div>
+
         <!-- Twitter API here -->
         <div class="row text-center">
             <div class="col">
                 <div id="twitter-api">
-                    <a class="twitter-timeline" data-width="800" data-height="600" data-link-color="#f91224" data-chrome="transparent noheader nofooter noborders"
+                    <a class="twitter-timeline" data-width="100%" data-height="600" data-link-color="#f91224" data-chrome="transparent noheader nofooter noborders"
                         href="https://twitter.com/terrorinpodnito?ref_src=twsrc%5Etfw">Tweets by @TerrorInPodnito</a>
                     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                 </div>
@@ -148,9 +240,11 @@
             <div class="col">
                 <a href="#">
                     <div class="follow-button">
+                        <br>
                         <a href="https://www.twitter.com/terrorinpodnito" target="_blank">
-                            <button class="btn btn-lg btn-outline-dark" type="button"><i class="fab fa-twitter"></i></button>
+                            <button class="btn btn-lg btn-outline-dark" type="button"><i class="fab fa-twitter"></i> Twitter</button>
                         </a>
+                        <br>
                     </div>
                 </a>
             </div>
@@ -158,30 +252,46 @@
     </div>
 </section>
 
-<section class="subsequent" id="newsletter">
-    <div class="container-fluid">
+<section class="subsequent" id="blog">
+    <div class="container">
         <div class="row text-center">
-            <div class="col-lg-12 col-md-12 col-sm-12">
-                <h1>Newsletter Signup</h1>
-                <form action="/" method="POST">
-                    <div class="form-group">
-                        <input type="text" name="fName" id="f-name" autocomplete="off" placeholder="First Name">
-                        <input type="text" name="lName" id="l-name" autocomplete="off" placeholder="Last Name">
-                    </div>
-                    <div class="form-group">
-                        <input type="email" name="email" id="email" autocomplete="off" placeholder="Enter Your Email">
-                        <small id="email-help" class="form-text text-muted">We'll never share your email with anyone
-                            else.</small>
-                    </div>
-                    <button type="submit" class="btn btn-lg btn-outline-light">Sign Up</button>
-                </form>
+            <div class="col">
+                <h1 class="haunted">Blog</h1>
             </div>
         </div>
+        <% posts.slice(-5).reverse().forEach((post) => { %>
+            <div class="container" id=<%=post._id %>>
+                <div class="row text-center">
+                    <div class="col-sm-12 post-img">
+                        <img src=<%=post.img %> alt=
+                        <%= 'post-img-' + post._id %>>
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <div class="col-sm-12 post-title">
+                        <div class="col-sm-12">
+                            <h3>
+                                <%= post.title %>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <div class="col-sm-12 post-content">
+                        <p>
+                            <%= post.content.substring(0, 500) + "..." %>
+                        </p>
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <div class="col-sm-12 read-more">
+                        <a href="/post/<%=post._id%>">
+                            <button class="btn btn-lg btn-outline-dark">Read More</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        <% }) %>
     </div>
 </section>
-
-<section class="subsequent" id="blog">
-
-</section>
-
 <%- include('footer') -%>

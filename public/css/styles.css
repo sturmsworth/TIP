@@ -1,40 +1,130 @@
-/* all */
+/*************************************** all ***************************************/
+@font-face {
+    font-family: 'haunting_attractionregular';
+    src: url('../css/fonts/haunting_attraction-webfont.woff2') format('woff2'),
+         url('../css/fonts/haunting_attraction-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* sets body font */
 html, body {
     width: 100%;
     font-family: 'Raleway', sans-serif;
 }
 
+/* for bullet removal on ul */
 ul {
     list-style-type: none;
     padding: 0;
 }
 
+/* controls padding on top of each new section */
 .subsequent {
-    padding: 5rem 0;
+    padding: 8rem 0 8rem 0;
 }
 
-/* about */
+/* for all section titles (i.e. "About", "Contact", etc. */
+.haunted {
+    font-family: 'haunting_attractionregular', sans-serif;
+    font-size: 4rem;
+    letter-spacing: 5px;
+}
+
+.btn-outline-dark {
+    color: black;
+}
+
+.btn-outline-dark:hover {
+    background-color: black;
+}
+
+/*************************************** header *************************************/
+#haunted-header {
+    font-family: 'haunting_attractionregular', sans-serif;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px #4a4a4a;
+    color: #85090c;
+    font-size: 8rem;
+    padding: 30vh 0 0 0;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: whitesmoke;
+}
+
+.nav-item {
+    padding: 0 3rem;
+}
+
+.nav-item a {
+    color: whitesmoke;
+    font-size: 1.35rem;
+    padding: 2rem 2rem 0 2rem;
+    transition: .75s;
+}
+
+/* hoving over navs */
+.nav-item a:hover {
+    color: #85090c;
+}
+
+/* parallax scrolls */
+.parallax {
+    min-height: 100vh; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#header-logo {
+    background-image: url("../images/home-paral.jpg");
+}
+
+#group {
+    background-image: url("../images/cover-pic.jpg")
+}
+
+/* home */
+
+/**************************** listen ******************************************/
+#listen {
+    padding: 30vh 0 30vh 0;
+}
+
+#listen button {
+    margin: 10vh 0;
+}
+
+/**************************** about *******************************************/
 #circle-logo {
     width: 100%;
 }
 
 .host {
     width: 85%;
+    border-radius: 10px;
+    box-shadow: 2.5px 2.5px 3.5px #4a4a4a;
 }
 
 #about p {
     padding: 0 1rem;
 }
 
-/* contact */
-
-
-/* newsletter */
-#newsletter {
-    background-image: url("../images/form-background.png");
-    padding: 10rem 0;
+/**************************** contact *****************************************/
+.social {
+    padding: 1.5em 0;
 }
 
+/**************************** newsletter **************************************/
+#newsletter {
+    background-image: url("../images/form-background.png");
+}
+/* for "Newsletter Signup" at the top */
+#news {
+    color: #cccccc;
+    padding: 30vh 0 0 0;
+}
+/* for inputs */
 #newsletter input[type=email] {
     border: none;
     color: whitesmoke;
@@ -46,12 +136,13 @@ ul {
     -webkit-transition: width 0.4s ease-in-out;
     transition: width 0.4s ease-in-out;
 }
-
+/* for focus borders */
 #newsletter input[type=email]:focus {
     width: 50%;
     color: whitesmoke;
 }
 
+/* for input colors/borders */
 #newsletter input[type=text] {
     border: none;
     color: whitesmoke;
@@ -64,14 +155,101 @@ ul {
     transition: width 0.4s ease-in-out;
 }
 
+/* for growing borders onClick */
 #newsletter input[type=text]:focus {
     width: 35%;
     color: whitesmoke;
 }
 
+/* for small font underneath */
 small {
     font-size: 1rem;
     color: whitesmoke;
 }
 
-/* footer */
+/************************************** Blog *************************************/
+.post-img img {
+    width: 90%;
+    box-shadow: 2.5px 2.5px 3.5px #4a4a4a;
+    border-radius: 10px;
+}
+
+.post-title {
+    padding-top: 1rem;
+}
+
+.read-more {
+    padding-bottom: 1rem;
+}
+
+                                /***** Post Pages *****/
+#blog-title {
+    padding: 3rem 0 0 0;
+}
+
+#blog-date {
+    padding: 0;
+}
+
+#blog-body {
+    padding: 1rem 0 0 0;
+}
+
+#blog-button {
+    padding: 1rem 0 0 0;
+}
+
+/************************************** footer ***********************************/
+#footer {
+    background-color: black;
+    color: whitesmoke;
+    padding: 5rem 0 5rem 0;
+}
+
+#hashtag {
+    color: whitesmoke;
+    transition: .75s;
+}
+
+#hashtag:hover {
+    color: #85090c;
+    text-decoration: none;
+}
+
+#hashtag h1 {
+    font-size: 4rem;
+}
+
+#footer .nav-item {
+    padding: 0;
+}
+
+#footer .nav-item a {
+    color: whitesmoke;
+    font-size: 1.35rem;
+    padding: 0;
+    transition: .75s;
+    text-decoration: none;
+}
+
+#footer .nav-item a:hover {
+    color: #85090c;
+}
+.footer-icon {
+    padding-top: 1.5rem;
+}
+
+#copyright {
+    padding-top: 1rem;
+}
+
+/* other */
+#pogo-stick {
+    padding-top: 25vh;
+}
+
+#pogo-stick .form-group input  {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 15px;
+}

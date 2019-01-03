@@ -1,15 +1,22 @@
 <%- include('header') -%>
 <section id="create-post">
     <div class="container">
-        <h1>Create New Blog Post</h1>
-        <form action="/create-post" method="post">
+        <h1>Create A New Post</h1>
+        <form action="/create-post" method="post" enctype="multipart/form-data">
             <div class="form-group">
-                <input type="text" class="form-control" name="title" id="post-title" placeholder="Blog Title">
                 <small>Title</small>
-                <textarea type="text" class="form-control" name="content" id="post-body" placeholder="Blog Content"></textarea>
+                <input type="text" class="form-control" name="title" id="post-title" placeholder="Title">
                 <small>Content</small>
-                <input type="text" class="form-control" name="tags" id="tags" placeholder="Tags">
+                <textarea type="text" class="form-control" name="content" id="post-body" placeholder="Content"></textarea>
                 <small>Tags (separate all tags with a comma ",")</small>
+                <input type="text" class="form-control" name="tags" id="tags" placeholder="Tags">
+                <small>Choose a image size. Please format all images to be 500x300px in size before submission.</small>
+                <div>
+                    <input type="file" name="file" id="file">
+                </div>
+
+            </div>
+            <div>
                 <button type="submit" class="btn btn-lg btn-outline-dark">Create Post</button>
             </div>
         </form>

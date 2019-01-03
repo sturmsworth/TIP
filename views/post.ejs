@@ -1,0 +1,43 @@
+<%- include('header') -%>
+<section class="subsequent" id="post">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-12 post-img" id="post-image">
+                <img src=<%= '../' + postImg %> alt="post-img">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12" id="blog-title">
+                <h1>
+                    <%= postTitle %>
+                </h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12" id="blog-date">
+                <h3>
+                    <%= postDate %>
+                </h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12" id="blog-body">
+                <div>
+                    <% postBody.split('\n').forEach((line) => { %>
+                        <%= line %><br><br>
+                    <% }) %>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12" id="blog-button">
+                <a href="/">
+                    <button class="btn-lg btn-outline-dark btn">
+                        Return Home
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<%- include('footer') -%>
